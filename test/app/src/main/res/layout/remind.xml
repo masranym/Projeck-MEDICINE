@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="masran.myapplication.MainActivity" >
+
+    <EditText
+        android:id="@+id/edittext"
+        android:layout_width="256dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/btn_notification"
+        android:layout_marginTop="109dp"
+        android:ems="10" />
+
+    <Button
+        android:id="@+id/btn_notification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/gobutton"
+        android:layout_centerHorizontal="true"
+        android:onClick="showNotification"
+        android:padding="25dp"
+        android:text="Show Notification" />
+
+    <Button
+        android:id="@+id/gobutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="Back" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/edittext"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="15dp"
+        android:text="Drug name"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/sptime"
+        android:layout_marginLeft="15dp"
+        android:layout_alignParentStart="true"
+        android:text="Eating time"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/sptime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/edittext"
+        android:layout_marginTop="185dp"
+        android:entries="@array/time"
+        android:spinnerMode="dropdown" />
+
+
+
+</RelativeLayout>
+
